@@ -30,6 +30,9 @@
             Debug.Log("entry SDK mode");
         }
 
+        /// <summary>
+        /// 離陸
+        /// </summary>
         public static void TakeOff()
         {
             byte[] dgram = Encoding.UTF8.GetBytes("takeoff");
@@ -37,6 +40,9 @@
             Debug.Log("Tello auto takeoff");
         }
 
+        /// <summary>
+        /// 着陸
+        /// </summary>
         public static void Land()
         {
             byte[] dgram = Encoding.UTF8.GetBytes("land");
@@ -44,6 +50,9 @@
             Debug.Log("Tello auto land");
         }
 
+        /// <summary>
+        /// 緊急停止
+        /// </summary>
         public static void EmergencyStop()
         {
             byte[] dgram = Encoding.UTF8.GetBytes("emergency");
@@ -51,6 +60,10 @@
             Debug.Log("Stop all motors immediately");
         }
 
+        /// <summary>
+        /// 前進
+        /// </summary>
+        /// <param name="speed">null許容、前進速度</param>
         public static void Forward(int? speed = null)
         {
             speed = CheckSpeed(speed);
@@ -60,6 +73,10 @@
             Debug.Log("move foward");
         }
 
+        /// <summary>
+        /// 後退
+        /// </summary>
+        /// <param name="speed">null許容、後退速度</param>
         public static void Backward(int? speed = null)
         {
             speed = CheckSpeed(speed);
@@ -69,6 +86,10 @@
             Debug.Log("move backward");
         }
 
+        /// <summary>
+        /// 左
+        /// </summary>
+        /// <param name="speed">null許容、速度</param>
         public static void Left(int? speed = null)
         {
             speed = CheckSpeed(speed);
@@ -78,6 +99,10 @@
             Debug.Log("move left");
         }
 
+        /// <summary>
+        /// 右
+        /// </summary>
+        /// <param name="speed">nul許容、速度</param>
         public static void Right(int? speed = null)
         {
             speed = CheckSpeed(speed);
@@ -87,6 +112,10 @@
             Debug.Log("move right");
         }
 
+        /// <summary>
+        /// 上昇
+        /// </summary>
+        /// <param name="speed">null許容、上昇速度</param>
         public static void Up(int? speed = null)
         {
             speed = CheckSpeed(speed);
@@ -96,6 +125,10 @@
             Debug.Log("move up");
         }
 
+        /// <summary>
+        /// 下降
+        /// </summary>
+        /// <param name="speed">null許容、下降速度</param>
         public static void Down(int? speed = null)
         {
             speed = CheckSpeed(speed);
