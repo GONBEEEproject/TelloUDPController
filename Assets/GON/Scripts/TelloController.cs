@@ -1,8 +1,10 @@
-﻿namespace GON.TelloController
+﻿using UnityEngine;
+using System.Net.Sockets;
+using System.Text;
+
+namespace GON.TelloController
 {
-    using UnityEngine;
-    using System.Net.Sockets;
-    using System.Text;
+
 
     public static class Controller
     {
