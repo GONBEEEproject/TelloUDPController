@@ -29,3 +29,6 @@ using GON.TelloController;
 ```EmergencyStop()``` 緊急停止します。
 
 他はそのうち書きます（おなかすいた
+
+# 今後
+Telloから飛んできてるレスポンスメッセージのレシーバーを組む予定です。
